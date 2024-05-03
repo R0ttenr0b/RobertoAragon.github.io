@@ -5,58 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roberto Aragon - Software Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="fonts/CourierNew.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta name="description" content="Roberto Aragon's personal portfolio showcasing skills in software engineering with a Matrix theme.">
+    <meta name="keywords" content="Software Engineer, Roberto Aragon, Java, Python, AWS, Matrix, Programmer">
 </head>
 <body>
     <header>
-        <h1>Roberto Aragon</h1>
-        <p>Aspiring Software Engineer | E-commerce Specialist</p>
+        <div class="container">
+            <h1>Roberto Aragon</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
     <main>
-        <section>
-            <h2>Welcome!</h2>
-            <p>Welcome to my professional portfolio website. I am a passionate software engineer focused on developing innovative e-commerce solutions and enhancing user experiences. Explore my website to learn more about my projects and professional journey.</p>
-        </section>
-        <section>
-            <h2>Featured Project</h2>
-            <p><a href="portfolio.html#iliacgolf">Iliac Golf Customization Tool</a> - A project where I led the development of a custom head cover customization feature integrated into Shopify.</p>
-        </section>
+        <div class="container">
+            <section class="skills">
+                <h2>Core Skills</h2>
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Expert in Java programming, focusing on backend development and performance optimization.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Proficient in Python with experience in data analytics, machine learning, and automation scripts.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud Computing</h3>
+                    <p>Experienced in AWS and Azure, implementing scalable cloud solutions for various applications.</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>Contact me at <a href="mailto:roberto.aragon86@gmail.com">roberto.aragon86@gmail.com</a>.</p>
-    </footer>
-
-    <section id="what-i-do">
-        <h2>FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</h2>
-        <ul class="tech-stack">
-            <li><i class="fab fa-html5"></i> HTML5</li>
-            <li><i class="fab fa-css3-alt"></i> CSS3</li>
-            <li><i class="fab fa-js-square"></i> JavaScript</li>
-            <li><i class="fab fa-react"></i> ReactJS</li>
-            <li><i class="fab fa-node-js"></i> NodeJS</li>
-            <li><i class="fab fa-python"></i> Python</li>
-            <li><i class="fas fa-database"></i> SQL Database</li>
-            <li><i class="fab fa-aws"></i> AWS</li>
-            <li><i class="fas fa-docker"></i> Docker</li>
-        </ul>
-        <div class="services">
-            <p>⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications</p>
-            <p>⚡ Progressive Web Applications (PWA) in normal and SPA Stacks</p>
-            <p>⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean</p>
+        <div class="container">
+            <p>Contact me at <a href="mailto:roberto.aragon86@gmail.com">roberto.aragon86@gmail.com</a></p>
         </div>
-    </section>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll('a');
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].className = "active";
+                }
+            }
+        });
+    </script>
+
     
-
-
-
-
 </body>
 </html>

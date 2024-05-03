@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #202020;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1, header nav {
+    display: inline-block;
+    vertical-align: top;
+}
+
+header h1 {
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skills {
+    margin: 20px 0;
+}
+
+.skill-card {
+    background: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #202020;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+body {
+    font-family: 'Courier New', monospace;
+    color: #0F0; /* Matrix green text */
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #000; /* Black header background */
+    color: #0F0; /* Matrix green text */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 255, 0, 0.5); /* Subtle green glow */
+}
+
+header h1, header nav {
+    display: inline-block;
+    vertical-align: top;
+}
+
+header h1 {
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #0F0; /* Matrix green links */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: #000; /* Black main background */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 255, 0, 0.3); /* Subtle green glow */
+}
+
+.skills {
+    margin: 20px 0;
+}
+
+.skill-card {
+    background-color: #112211; /* Very dark green background for cards */
+    color: #0F0; /* Matrix green text */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0F0; /* Matrix green left border */
+}
+
+footer {
+    background-color: #000; /* Black footer background */
+    color: #0F0; /* Matrix green text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    header h1, nav ul {
+        text-align: center;
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+    }
+}
+body {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+nav ul li a:hover, nav ul li a.active {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+.skill-card:hover {
+    border-left: 5px solid #FFF;
+    background-color: #193319;
+}
+body {
+    color: #0F0;
+    background-color: #000;
+}
+
+a:focus, button:focus {
+    outline: 3px dashed #0F0;
+}
