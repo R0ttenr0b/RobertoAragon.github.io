@@ -1490,3 +1490,18 @@ p, li { color: #E0E0E0; }
 .contact-form { background-color: #333; padding: 20px; margin-top: 20px; }
 input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: none; background: #222; color: #fff; }
 button { background-color: #69F0AE; color: #000; padding: 10px 20px; border: none; cursor: pointer; }
+
+button {
+  background-color: #69F0AE;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, button:focus {
+  background-color: #57c89f;
+  color: #fff;
+}
+
