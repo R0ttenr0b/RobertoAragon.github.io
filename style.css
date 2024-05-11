@@ -1596,8 +1596,8 @@ button {
   height: auto; /* Keeps the aspect ratio intact */
 }
 .profile-pic {
-  width: 50%; /* Takes up 50% of the container width */
-  max-width: 600px; /* Ensures it doesn't get larger than 300px */
+  width: 1050%; /* Takes up 50% of the container width */
+  max-width: 800px; /* Ensures it doesn't get larger than 300px */
   height: auto; /* Maintains the aspect ratio */
 }
 
@@ -1611,7 +1611,12 @@ button {
 .about-section {
   width: 50%; /* Adjust the width as needed */
   padding: 20px;
-  background-color: #333; /* Gives a background color */
+  background-color: #013613; /* Gives a background color */
   border-radius: 10px; /* Rounds the corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Optional: Adds shadow for depth */
+  position: absolute; /* Allows precise positioning */
+    top: 50%; /* Adjust these values based on the screenshot */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the block exactly where you want */
 }
+
