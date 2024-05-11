@@ -730,6 +730,51 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 }
+
+body {
+  overflow-y: auto; /* Allows vertical scrolling */
+  height: auto; /* Removes fixed height constraint */
+}
+.main-content, .container {
+  max-height: 100vh; /* Adjust if you originally had a smaller height */
+  overflow-y: auto; /* Enable vertical scrolling within the container */
+}
+.skills {
+  position: relative; /* instead of absolute, if it was */
+  padding-bottom: 20px; /* adds space at the bottom */
+}
+.skills {
+  min-height: 90vh; /* ensures enough space */
+  overflow-y: auto; /* allows scrolling */
+  padding: 20px; /* adds padding inside the container */
+  background: linear-gradient(to bottom, #13420d, #227412); /* example gradient background */
+}
+.skill-card {
+  background-color: #333; /* Dark background for each card */
+  color: #fff; /* White text */
+  margin-bottom: 10px; /* Space between cards */
+  padding: 15px; /* Padding inside cards */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+.skill-card {
+  background-color: #333; /* Dark background for each card */
+  color: #fff; /* White text */
+  margin-bottom: 10px; /* Space between cards */
+  padding: 15px; /* Padding inside cards */
+  border-radius: 5px; /* Rounded corners */
+  display: flex; /* Layout children elements in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.skill-card img {
+  margin-right: 10px; /* Space between the image and the text */
+  width: 50px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
 /* skills media queries ends*/
 /* skills section ends */
 
@@ -1620,5 +1665,25 @@ button {
     top: 50%; /* Adjust these values based on the screenshot */
     left: 50%;
     transform: translate(-50%, -50%); /* Centers the block exactly where you want */
+}
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #000;
+  color: #fff;
+  overflow: auto;
+  min-height: 100vh;
+}
+.skill-meter label {
+  color: #69F0AE;
+}
+.meter {
+  background-color: #333;
+  border: 1px solid #021114;
+  padding: 3px;
+}
+.meter > span {
+  display: block;
+  height: 20px;
+  background-color: #69F0AE;
 }
 
