@@ -46,7 +46,42 @@
             .contact-form { background-color: #333; padding: 20px; margin-top: 20px; }
             input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: none; background: #222; color: #fff; }
             button { background-color: #69F0AE; color: #000; padding: 10px 20px; border: none; cursor: pointer; }
-        </style>
+       
+            body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #fff;
+            overflow: auto; /* Allows scrolling */
+            height: auto; /* Adjusts height to content */
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #021114;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .skill-card {
+            background-color: #333;
+            border: 2px solid #69F0AE;
+            box-shadow: 0 0 10px #69F0AE;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #69F0AE;
+        }
+        p {
+            color: #E0E0E0;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+       
+       </style>
     </head>
     <body>
         <div class="matrix-effect">
@@ -112,6 +147,7 @@
         </nav>
     </header>
     <main>
+        
         <section class="portfolio-section">
             <h2>Projects & Work</h2>
             <div class="project">
@@ -120,7 +156,7 @@
             </div>
             <div class="project">
                 <h3>2D In-Screen Border Game</h3>
-                <p>Created an interactive 2D game using Python and the Pygame library. This project incorporated advanced programming techniques, including the boids algorithm for naturalistic movements of characters.</p>
+                <p>Created an interactive 2D game using HTML 5 and Java script. This project incorporated advanced programming techniques, including the boids algorithm for naturalistic movements of characters.</p>
             </div>
             <div class="project">
                 <h3>Cloud Solutions Implementation</h3>

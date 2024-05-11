@@ -1687,3 +1687,18 @@ body {
   background-color: #69F0AE;
 }
 
+.portfolio-section {
+  max-width: 800px; /* Adjusts the width of the section */
+  margin: 0 auto; /* Centers the section horizontally */
+  padding-right: 20px; /* Adds padding on the right for spacing */
+  padding-left: 20px; /* Adds padding on the left for spacing */
+  text-align: left; /* Ensures text within the section is aligned to the left */
+}
+
+.resume-section {
+  max-width: 800px; /* Adjusts the width of the section */
+  margin: 0 auto; /* Centers the section horizontally */
+  padding-right: 20px; /* Adds padding on the right for spacing */
+  padding-left: 20px; /* Adds padding on the left for spacing */
+  text-align: left; /* Ensures text within the section is aligned to the left */
+}
