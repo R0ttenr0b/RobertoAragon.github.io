@@ -1704,3 +1704,14 @@ body {
 }
 
 /*Improved Media Queries for Mobile Devices*/ 
+
+figure {
+  width: 50vw;  /* 50% of the viewport width */
+  height: 50vh; /* 50% of the viewport height */
+  margin: auto; /* Centers the figure if the parent is wider */
+}
+
+figure img {
+  width: 100%;  /* Makes the image fill the figure */
+  height: auto; /* Maintains the aspect ratio */
+}
