@@ -1717,5 +1717,18 @@ figure img {
 }
 
 
+    .resume-image {
+        display: block;
+        margin: auto; /* Center the image */
+        max-width: 165%; /* Makes the image responsive to the width of the screen */
+        height: auto; /* Maintains the aspect ratio */
+    }
+
+    .center-text {
+      text-align: center;
+      display: block;
+  }
+  
+
 
 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Roberto Aragon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes matrix-rain {
+            0% {color: #000; transform: translateY(0);}
+            100% {color: #69F0AE; transform: translateY(100%);}
+        }
+        body { 
+            font-family: 'Courier New', monospace; 
+            background-color: #000; 
+            color: #fff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .matrix-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #69F0AE;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            opacity: 0.5;
+        }
+        header, footer { 
+            background-color: #021114; 
+            padding: 10px 20px; 
+            text-align: center; 
+            width: 100%;
+        }
+        main {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+        section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: #333;
+            padding: 20px;
+            margin: auto;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #69F0AE;
+            color: #000;
+            cursor: pointer;
+        }
+        a {
+            color: #69F0AE;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix-effect">
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+        <span>0110101010011101010101</span>
+        <span>1010010101010101001010</span>
+        <span>0101010101010010111010</span>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roberto Aragon - Resume</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Roberto Aragon</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="resume-section">
+                <nav>
+                    <ul>
+                        <h2>Professional Summary</h2>
+                        <p>Dynamic software engineer blending a Bachelor’s degree in Computer Science and Information Systems from Cal State San Marcos with robust expertise in Java, C++, and Python. Adept at driving innovations in cloud architecture using AWS and developing scalable web solutions with HTML5 and JavaScript. Proven track record in leading Agile project teams to exceed business goals through advanced technological solutions. Ready to leverage analytical skills and a systematic approach to solve complex problems and enhance user experience.</p>
+                        
+            </ul>
+            </nav>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:roberto.aragon86@gmail.com">roberto.aragon86@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/robertoaragon">Visit My LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/R0ttenRob">Visit My GitHub</a></p>
+        </section>
+        <section class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Programmed/Designed by Roberto Aragon - Aspiring Web Developer/Software Engineer</p>
+    </footer>
+</body>
+</html>
