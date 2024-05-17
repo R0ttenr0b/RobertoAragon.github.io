@@ -70,6 +70,48 @@
             color: #69F0AE;
             text-decoration: none;
         }
+
+        @keyframes matrix-rain {
+                0% {color: #000; transform: translateY(0);}
+                100% {color: #69F0AE; transform: translateY(100%);}
+            }
+            body { 
+                font-family: 'Courier New', monospace; 
+                background-color: #000; 
+                color: #fff; 
+                overflow: hidden;
+                position: relative;
+                height: 100vh;
+            }
+            .matrix-effect {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: #69F0AE;
+                font-size: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                opacity: 0.5;
+            }
+            .matrix-effect span {
+                animation: matrix-rain 10s infinite linear both;
+            }
+            header, footer { 
+                background-color: #021114; 
+                padding: 10px 20px; 
+                text-align: center; 
+                position: relative; 
+            }
+            section { padding: 20px; position: relative; z-index: 1; }
+            h1, h2 { color: #69F0AE; }
+            p, li { color: #E0E0E0; }
+            .section-heading { border-bottom: 2px solid #69F0AE; }
+            .contact-form { background-color: #333; padding: 20px; margin-top: 20px; }
+            input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: none; background: #222; color: #fff; }
+            button { background-color: #69F0AE; color: #000; padding: 10px 20px; border: none; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -117,7 +159,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Roberto Aragon - Resume</title>
+        <title>Roberto Aragon - contacts</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
