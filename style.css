@@ -1730,5 +1730,123 @@ figure img {
   }
   
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Courier New', monospace; /* Consistent font for the matrix theme */
+  }
+  
+  body {
+      color: #0F0; /* Neon green text */
+      background-color: #000; /* Black background */
+      overflow-x: hidden; /* Prevents horizontal scroll */
+      position: relative;
+      min-height: 100vh;
+  }
+  
+  header {
+      background-color: #021114; /* Dark background for the header */
+      color: #0F0; /* Neon green text */
+      padding: 20px 0;
+      width: 100%;
+      position: fixed; /* Makes header stay in place during scroll */
+      top: 0;
+      left: 0;
+      z-index: 1000; /* Ensures header is always on top */
+      box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Subtle green shadow for depth */
+  }
+  
+  header h1, header nav {
+      display: inline-block;
+      vertical-align: top;
+  }
+  
+  header h1 {
+      margin: 0 20px;
+  }
+  
+  nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around; /* Distributes space evenly around navigation links */
+  }
+  
+  nav ul li {
+      display: inline;
+  }
+  
+  nav ul li a {
+      color: #0F0; /* Neon green links */
+      text-decoration: none;
+      padding: 10px 20px; /* Padding for better touch area */
+      text-transform: uppercase;
+      transition: color 0.3s;
+  }
+  
+  nav ul li a:hover, nav ul li a.active {
+      color: #FFF; /* White text on hover/active */
+      text-decoration: underline;
+  }
+  
+  main {
+      padding: 60px 20px 20px; /* Adds space for the fixed header */
+      text-align: center; /* Centers the main content */
+  }
+  
+  .contact-form {
+      background-color: #333;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%; /* Responsive width */
+      border-radius: 8px; /* Rounded corners for the form */
+  }
+  
+  input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      background-color: #222;
+      border: 1px solid #0F0; /* Neon green border */
+      color: #0F0; /* Neon green text */
+  }
+  
+  button {
+      background-color: #69F0AE;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+      background-color: #57c89f; /* Lighter green on hover */
+      transform: scale(1.05); /* Slightly enlarges the button */
+  }
+  
+  footer {
+      background-color: #021114;
+      color: #0F0;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+      nav ul {
+          flex-direction: column; /* Stacks nav items vertically on smaller screens */
+      }
+  
+      nav ul li a {
+          display: block; /* Full width links for easier touch */
+      }
+  }
+  
 
