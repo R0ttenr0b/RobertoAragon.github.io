@@ -1849,4 +1849,29 @@ figure img {
       }
   }
   
+  .profile-image {
+    width: 50%; /* Adjust width to fit the design */
+    max-width: 400px; /* Maximum width to ensure it doesn't get too large */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures it's a block-level element */
+    margin: 20px auto; /* Centers the image horizontally and adds vertical spacing */
+}
 
+.profile-image {
+  position: relative;  /* Can be absolute or relative depending on layout needs */
+  z-index: 10;         /* Higher than any other element's z-index */
+  width: 80%;          /* Example to control size, adjust as needed */
+  margin: 20px auto;   /* Centering the image horizontally if needed */
+  display: block;      /* Makes the img block level for margin auto to work */
+}
+
+.matrix-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;          /* Ensure this is lower than the image's z-index */
+  opacity: 0.5;
+  overflow: hidden;    /* Prevents the effect from spilling out */
+}
